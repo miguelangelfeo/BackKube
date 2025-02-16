@@ -34,7 +34,7 @@ public class NombreService {
         return true;
     }
 
-    public List<NombreORM> obtenerJuegos() {
+    public List<NombreORM> obtenerNombres() {
         return nombreJPA.findAll().stream()
                 .map(nombre -> new NombreORM( nombre.getId(),nombre.getNombre()))
                 .collect(Collectors.toList());

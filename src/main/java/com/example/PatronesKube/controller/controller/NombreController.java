@@ -26,12 +26,10 @@ public class NombreController {
     }
 
 
-
-
     @GetMapping(path = "/nombres")
     public List obtenerNombres() {
 
-        return nombreService.obtenerJuegos();
+        return nombreService.obtenerNombres();
 
     }
 
